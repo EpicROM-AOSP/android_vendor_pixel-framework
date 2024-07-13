@@ -282,6 +282,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             WallpaperNotifier wallpaperNotifier,
             SmartSpaceController smartSpaceController,
             DockObserver dockObserver,
+            SysUiState sysUiState,
             TunerService tunerService
     ) {
         super(context, notificationsController, fragmentService, lightBarController, autoHideController, statusBarInitializer,
@@ -301,7 +302,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 screenOffAnimationController, wallpaperController, statusBarHideIconsForBouncerManager, lockscreenShadeTransitionController, featureFlags,
                 keyguardUnlockAnimationController, mainHandler, delayableExecutor, messageRouter, wallpaperManager, startingSurfaceOptional, activityTransitionAnimator,
                 deviceStateManager, wiredChargingRippleController, dreamManager, cameraLauncherLazy, lightRevealScrimViewModelLazy, lightRevealScrim,
-                alternateBouncerInteractor, userTracker, fingerprintManager, activityStarter, sceneContainerFlags, tunerService);
+                alternateBouncerInteractor, userTracker, fingerprintManager, activityStarter, sceneContainerFlags, sysUiState, tunerService);
         mContext = context;
         mBatteryStateChangeCallback = new BatteryController.BatteryStateChangeCallback() {
             @Override
